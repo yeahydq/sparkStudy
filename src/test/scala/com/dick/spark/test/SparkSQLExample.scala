@@ -17,6 +17,7 @@
 package com.dick.spark.test
 
 // $example on:schema_inferring$
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.catalyst.encoders.ExpressionEncoder
 import org.apache.spark.sql.Encoder
 // $example off:schema_inferring$
@@ -39,6 +40,8 @@ object SparkSQLExample {
   // $example off:create_ds$
 
   def main(args: Array[String]) {
+    Logger.getLogger("org").setLevel(Level.ERROR)
+
     // $example on:init_session$
     val spark = SparkSession
       .builder()
