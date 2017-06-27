@@ -16,20 +16,10 @@
  */
 package com.dick.spark.test
 
-// $example on:schema_inferring$
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.catalyst.encoders.ExpressionEncoder
-import org.apache.spark.sql.Encoder
-// $example off:schema_inferring$
 import org.apache.spark.sql.Row
-// $example on:init_session$
 import org.apache.spark.sql.SparkSession
-// $example off:init_session$
-// $example on:programmatic_schema$
-// $example on:data_types$
 import org.apache.spark.sql.types._
-// $example off:data_types$
-// $example off:programmatic_schema$
 
 object SparkSQLExample {
 
